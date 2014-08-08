@@ -1,3 +1,4 @@
+//Program to delete a node pointed by a given pointer
 #include <stdio.h>
 #include <stdlib.h>
 
