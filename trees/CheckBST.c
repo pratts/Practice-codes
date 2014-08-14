@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 struct node
 {
@@ -49,6 +50,6 @@ int main()
 	root->right->right=create(10);
 	root->right->right->left=create(9);
 	
-	printf("%s",checkbst(root,10000,-10000)==1?"BST":"NOT BST");
+	printf("%s",checkbst(root,INT_MAX,INT_MIN)==1?"BST":"NOT BST");
 	return 0;
 }
