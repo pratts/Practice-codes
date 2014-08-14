@@ -15,6 +15,6 @@ int gcd(int x,int y)
 
 int main()
 {
-	printf("%d",gcd(48,18));
+	printf("%d",gcd(3,4));
 	return 0;
 }
