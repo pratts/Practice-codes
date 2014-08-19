@@ -12,6 +12,7 @@ void dectobin(int num)
 
 int main()
 {
-	dectobin(16);
+	dectobin(253);
+	
 	return 0;
 }
