@@ -8,6 +8,7 @@ int main()
 	int *a=malloc(sizeof(*a));
 	*a=2;
 	printf("%d\n",&a);
-	printf("%d",a);
+	printf("%d\n",a);
+	printf("%d",*a);
 	return 0;
 }
