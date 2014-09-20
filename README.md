@@ -50,4 +50,8 @@ PassVarArgs.c                   functions                               Pass var
 ForkExample.c                   OS                                      Fork's example
 FreopenExample.c                OS                                      Example of freopen 
 
+PassStructure.c                 structures                              Pass the structure variable in a function
+Padding.c                       structures                              Example of padding in a function
+OffsetField.c                   structures                              Finding the offset of a variable in a structure
+
 
