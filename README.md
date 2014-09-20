@@ -54,4 +54,49 @@ PassStructure.c                 structures                              Pass the
 Padding.c                       structures                              Example of padding in a function
 OffsetField.c                   structures                              Finding the offset of a variable in a structure
 
-
+8QueenProblem.c                 other                                   Solution of 8 queen problem
+Factorial.c                     other                                   Factorial of a number
+Powerxn.c                       other                                   nth power of a number without using pow function
+ReverseWords.c                  other                                   Reverse words of a string
+SquareMatrixHelically.c         other                                   Print a square matrix helically
+StringReverse.c                 other                                   Reverse a string
+SwapWithoutExtra.c              other                                   Swap two variable without using temporary variable
+PermutationString.c             other                                   Permutation of a string
+MaxSubarray.c                   other                                   Maximum sum in a subarray
+Fibonacci.c                     other                                   Print the fibonacci series
+RatMazeProblem.c                other                                   Rat in a maze problem
+Endian.c                        other                                   Find whther machine's byte order is little/big endian
+towerofhanoi.c                  other                                   Tower of hanoi problem
+Powerof2.c                      other                                   Find if a number is power of two or not
+Ternary.c                       other                                   Use of ternary operator
+SizeofStructure.c               other                                   Size of structure without using sizeof operator
+Palindrome.c                    other                                   Check if a string is palindrome
+BinarySearch.c                  other                                   Perform binary search on an array
+PrintPercent.c                  other                                   Print percent using \b
+SwapNibbles.c                   other                                   Swap nibbles in a byte
+Multiplyby7.c                   other                                   Multiply a number by 7
+SumOfdigits.c                   other                                   Find the sum of digits of a number
+MergeSortedArrays.c             other                                   Merge two sorted arrays
+StackDirection.c                other                                   Find the direction of stack growth (up or down)
+RemoveDuplicates.c              other                                   Remove duplicates and keep only 1 copy of a number in a sorted array
+GCD.c                           other                                   GCD of two numbers
+DecimaltoBinary.c               other                                   Convert decimal to binary
+TernaryReturn.c                 other                                   Assign variable using ternary operator
+CheckEquality.c                 other                                   Check x==0 and 0==x
+NestedStructures.c              other                                   Example of nested structures
+DefineMacroToSquare.c           other                                   Define a macro to square a number
+FileCheck.c                     other                                   Check if a file exists.How stat(), fstat(), lstat() work ?
+PrintMobileKeypad.c             other                                   Print the number according to the character given on the mobile keypad
+HeapAlgorithm.c                 other                                   Heap's algorithm to print permutation of a string
+DeleteFile.c                    other                                   Delete a file in c
+CopyFile.c                      other                                   Copy a file in c
+ReadDirectory.c                 other                                   Read a directory in c
+VariableFieldPrintf.c           other                                   Variable field width in printf
+Numbertostring.c                other                                   Convert number to string
+StrcpyStrncpy.c                 other                                   strcpy and strncpy functions
+STRTOK.c                        other                                   Use of strtok function
+FloatingPointFormat.c           other                                   use of %f
+MainPrototype.c                 other                                   Prototype of main function
+MainRecursion.c                 other                                   Recursively calling main function
+RotateMatrix.c                  other                                   Rotate a matrix by 90 degree clockwise
+StackAddress.c                  other                                   Find the address of stack pointer
