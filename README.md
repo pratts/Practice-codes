@@ -38,4 +38,8 @@ InsertionSort.c			sorting					Insertion sort
 MergeSort.c			sorting					Merge sort
 QuickSort.c			sorting					Quick sort
 
+CheckPointer.c			C pointers				Check the value of pointer
+Array.c				C pointers				Check the address of first element of array
+CastMalloc.c			C pointers				Cast the result of malloc
+
 
