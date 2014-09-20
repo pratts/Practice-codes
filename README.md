@@ -30,4 +30,12 @@ LowestCommomAncestor.c          trees                                   Lowest c
 ExpressionTree.c                trees                                   Create an expression from given expression tree
 StoreTreeInArray.c              trees                                   Store a tree in an array
 
+CountSetBits.c			bits fiddling				Count the set bits in an integer
+
+HeapSort.c			sorting					Heap sort
+SelectionSort.c			sorting					Selection sort
+InsertionSort.c			sorting					Insertion sort
+MergeSort.c			sorting					Merge sort
+QuickSort.c			sorting					Quick sort
+
 
