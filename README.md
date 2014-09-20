@@ -30,16 +30,24 @@ LowestCommomAncestor.c          trees                                   Lowest c
 ExpressionTree.c                trees                                   Create an expression from given expression tree
 StoreTreeInArray.c              trees                                   Store a tree in an array
 
-CountSetBits.c			bits fiddling				Count the set bits in an integer
+CountSetBits.c                  bits fiddling                           Count the set bits in an integer
 
-HeapSort.c			sorting					Heap sort
-SelectionSort.c			sorting					Selection sort
-InsertionSort.c			sorting					Insertion sort
-MergeSort.c			sorting					Merge sort
-QuickSort.c			sorting					Quick sort
+HeapSort.c                      sorting                                 Heap sort
+SelectionSort.c                 sorting                                 Selection sort
+InsertionSort.c                 sorting                                 Insertion sort
+MergeSort.c                     sorting                                 Merge sort
+QuickSort.c                     sorting                                 Quick sort
 
-CheckPointer.c			C pointers				Check the value of pointer
-Array.c				C pointers				Check the address of first element of array
-CastMalloc.c			C pointers				Cast the result of malloc
+CheckPointer.c                  C pointers                              Check the value of pointer
+Array.c				C pointers                              Check the address of first element of array
+CastMalloc.c                    C pointers                              Cast the result of malloc
+
+FunctionPointer.c               functions                               Use of a function pointer
+func.h,ExternFunction.c         functions                               Use of extern keyword with a function
+VarArgFunction.c                functions                               Variable argument function
+PassVarArgs.c                   functions                               Pass variable arguments to another function
+
+ForkExample.c                   OS                                      Fork's example
+FreopenExample.c                OS                                      Example of freopen 
 
 
