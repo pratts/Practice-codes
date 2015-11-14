@@ -1,5 +1,7 @@
 Practice-codes
 ==============
+It contains two folders:
+1.) c - Contains code written in c
 The Practice-codes repository contains codes for various problems and algorithms.
 
 File                            Folder                                  Description
@@ -100,3 +102,5 @@ MainPrototype.c                 other                                   Prototyp
 MainRecursion.c                 other                                   Recursively calling main function
 RotateMatrix.c                  other                                   Rotate a matrix by 90 degree clockwise
 StackAddress.c                  other                                   Find the address of stack pointer
+
+2.) shell - contains some practice shell scripts
