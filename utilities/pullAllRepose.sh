@@ -6,12 +6,13 @@ fi
 if [ -d $1 ]; then
     echo "File '$1' is a directory.Can proceed with fetching code."
     cd $1
-    for i in `ls $1`
+    for i in `ls`
     do
         cd $i
         echo $i
         git pull
         cd ..
+        echo ''
     done
 elif [ -f $1 ]; then
     echo "File '$1' if a file, so cannot pull code!"
