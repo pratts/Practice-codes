@@ -5,6 +5,8 @@ all: clean
 	cc $(CFLAGS) checkGetcharEOF.c -o checkGetcharEOF
 	cc $(CFLAGS) getSetChar.c -o getSetChar
 	cc $(CFLAGS) printEOF.c -o printEOF
+	cc $(CFLAGS) checkChar.c -o checkChar
+	cc $(CFLAGS) checkSize.c -o checkSize
 clean:
 	rm -f _*.o 
 	find . -type f -executable -exec rm {} +
