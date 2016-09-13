@@ -7,6 +7,7 @@ all: clean
 	cc $(CFLAGS) printEOF.c -o printEOF
 	cc $(CFLAGS) checkChar.c -o checkChar
 	cc $(CFLAGS) checkSize.c -o checkSize
+	cc $(CFLAGS) enumExample.c -o enumExample
 clean:
 	rm -f _*.o 
 	find . -type f -executable -exec rm {} +
