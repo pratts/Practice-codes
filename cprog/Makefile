@@ -8,6 +8,8 @@ all: clean
 	cc $(CFLAGS) checkChar.c -o checkChar
 	cc $(CFLAGS) checkSize.c -o checkSize
 	cc $(CFLAGS) enumExample.c -o enumExample
+	cc $(CFLAGS) checkCharToInt.c -o checkCharToInt
+	cc $(CFLAGS) unsLongComp.c -o unsLongComp
 clean:
 	rm -f _*.o 
 	find . -type f -executable -exec rm {} +
