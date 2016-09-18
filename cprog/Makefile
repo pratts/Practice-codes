@@ -1,15 +1,10 @@
-CFLAGS=-Wall -g
+SRCS = $(wildcard *.c)
 
-all: clean
-	cc $(CFLAGS) _1-3.c -o _1-3
-	cc $(CFLAGS) checkGetcharEOF.c -o checkGetcharEOF
-	cc $(CFLAGS) getSetChar.c -o getSetChar
-	cc $(CFLAGS) printEOF.c -o printEOF
-	cc $(CFLAGS) checkChar.c -o checkChar
-	cc $(CFLAGS) checkSize.c -o checkSize
-	cc $(CFLAGS) enumExample.c -o enumExample
-	cc $(CFLAGS) checkCharToInt.c -o checkCharToInt
-	cc $(CFLAGS) unsLongComp.c -o unsLongComp
-clean:
-	rm -f _*.o 
-	find . -type f -executable -exec rm {} +
+PROGS = $(patsubst %.c,%,$(SRCS))
+
+all: $(PROGS)
+
+%: %.c
+	$(CC) $(CFLAGS) -o $@ $< -lm
+clean: 
+	rm -f $(PROGS)
