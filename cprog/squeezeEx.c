@@ -6,18 +6,28 @@ void squeezeAlt(char s1[], char s2[]) {
 		int s = s1[k];
 		int i=0, j=0;
 		for(;s2[i] != '\0';i++) {
-			printf("hellow-->%c\t%c\t%d\t\t%d\n", s, s2[i], i, j);
 			if(s2[i] != s) {
 				s2[j++] = s2[i];
 			}
 		}
-		//s2[j] = '\0';
+		s2[j] = '\0';
 		k++;
 	}	
-	printf("%s\n", s2);
 }
 
+void squeezeChar(char s1[], int s) {
+	int i=0, j=0;
+	for(;s1[i] != '\0';i++) {
+		if(s1[i] != s) {
+			s1[j++] = s1[i];
+		}
+	}
+	s1[j] = '\0';
+}
 int main(int argc, char **argv) {
-	squeezeAlt("hello", "world");
+	char s[]="hello";
+	//squeezeChar(s, 'l');
+	squeezeAlt("world", s);
+	printf("%s\n", s);
 	return 0;
 }
