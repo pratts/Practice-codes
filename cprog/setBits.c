@@ -9,5 +9,6 @@ void setBits(unsigned int x, int p, int n, unsigned int y) {
 
 int main(int argc, char **argv) {
 	setBits(181, 4, 3, 3);
+	setBits(47, 5, 2, 1);
 	return 0;
 }

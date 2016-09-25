@@ -8,5 +8,6 @@ int main(int argc, char **argv) {
 	printf("sizeof long\t%lu\n", sizeof(long));
 	printf("sizeof short\t%lu\n", sizeof(short));
 	printf("unsigned long\t%lu\n", sizeof(unsigned long));	
+	printf("unsigned int\t%lu\n", sizeof(unsigned int));	
 	return 0;
 }
