@@ -1,0 +1,53 @@
+#!/bin/sh
+old_com_select=0
+old_com_insert=0
+old_com_update=0
+old_com_delete=0
+
+current_com_select=0
+current_com_insert=0
+current_com_update=0
+current_com_delete=0
+
+/usr/bin/mysqladmin -upratts extended-status > /var/log/munin/com_select_log_temp
+
+current_com_delete=`/bin/sed -n '46p' "/var/log/munin/com_select_log_temp" | /usr/bin/cut -d'|' -f 3`
+current_com_insert=`/bin/sed -n '69p' "/var/log/munin/com_select_log_temp" | /usr/bin/cut -d'|' -f 3`
+current_com_select=`/bin/sed -n '93p' "/var/log/munin/com_select_log_temp" | /usr/bin/cut -d'|' -f 3`
+current_com_update=`/bin/sed -n '151p' "/var/log/munin/com_select_log_temp" | /usr/bin/cut -d'|' -f 3`
+
+
+if [ -f /var/log/munin/com_command_log ]; then
+	old_com_select=`/bin/sed -n '1p' "/var/log/munin/com_command_log"`
+	old_com_insert=`/bin/sed -n '2p' "/var/log/munin/com_command_log"`
+	old_com_update=`/bin/sed -n '3p' "/var/log/munin/com_command_log"`
+	old_com_delete=`/bin/sed -n '4p' "/var/log/munin/com_command_log"`
+else
+	current_com_select=0
+	current_com_insert=0
+	current_com_update=0
+	current_com_delete=0
+fi
+
+#echo "$old_com_select $current_com_select"
+#echo "$old_com_insert $current_com_insert"
+
+#/bin/rm -rf /home/prateek/work/repos/mysql-data/temp/com_select_log_temp
+echo $current_com_select | /usr/bin/cut -d' ' -f 2 > /var/log/munin/com_command_log
+echo $current_com_insert | /usr/bin/cut -d' ' -f 2 >> /var/log/munin/com_command_log
+echo $current_com_update | /usr/bin/cut -d' ' -f 2 >> /var/log/munin/com_command_log
+echo $current_com_delete | /usr/bin/cut -d' ' -f 2 >> /var/log/munin/com_command_log
+
+echo "graph_title Mysql Queries Count Difference"
+echo "graph_vlabel Count"
+echo "graph_category system";
+
+echo "select.label Select Queries"
+echo "update.label Update Queries"
+echo "insert.label Insert Queries"
+echo "delete.label Delete Queries"
+
+echo "select.value" $(/usr/bin/expr $current_com_select - $old_com_select)
+echo "insert.value" $(/usr/bin/expr $current_com_insert - $old_com_insert)
+echo "update.value" $(/usr/bin/expr $current_com_update - $old_com_update)
+echo "delete.value" $(/usr/bin/expr $current_com_delete - $old_com_delete)
